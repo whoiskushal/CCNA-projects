@@ -17,7 +17,7 @@ S.NO	Device 	Model Name	Quantity
 3.	cable	automatically chosen cable	None
 IP Addressing Table:
 
-S.No	Device	IPv4 Address	Subnet Mask
+S.No	Device	IPv4 Address	Subnet Mask(you can set the ip according to your choice)
 1.	PC0	192.168.0.1	255.255.255.0
 2.	PC1	192.168.0.2	255.255.255.0
 3.	PC2	192.168.0.3	255.255.255.0
