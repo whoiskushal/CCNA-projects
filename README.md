@@ -7,6 +7,28 @@ hello there, this is my tenth day of learning CCNA and now i am doing my first p
 VLAN stands for a virtual local area network, additionally referred to as a Logical Network VLAN can logically create many virtual networks to split network broadcast traffic. VLANs are primarily based totally on logical connections, So it facilitates minimizing broadcasting traffic, and management work could be accomplished quickly.
 
 VLANs also can enhance the network’s overall performance due to the fact VLANs make organizations of devices that communicate very frequently.
+Modes of Switch port: 
+Administrative mode: 
+This Switch Port mode is configured by the admin.
+Types of Administrative mode: 
+Static Access – (no negotiation of the trunk)
+Static Trunk – (forces formation of the trunk)
+Dynamic Desirable – (initiates negotiation of the trunk)
+Dynamic Auto – (wait for the negotiation of the trunk)
+
+Operational Mode: 
+This is the resulting mode of the Switch Port after the negotiation (the result of the configuration done by the admin).
+Types of Operational mode:
+Access Mode – If the port is in access mode then the port can carry only one VLAN data. It is only configured on the ports connected to the end users.
+
+switch(config)#int <interface_id>
+switch(config-if)#Switch Port mode access
+Trunk Mode -If the port is in Trunk mode then the port can carry multiple VLAN data using the Layer 2 encapsulation protocol (either Dot1Q or ISL).
+
+switch(config)#int <interface_id>
+switch(config-if)#Switch Port mode trunk
+
+
 
 Steps to Configure and Verify the Normal Range VLAN Spanning Multiple Switches:
 Step 1: Create a network topology with the help of two LAN networks, VLAN10 and VLAN20.Now configure and Verify the Normal range VLAN spanning multiple switches:
